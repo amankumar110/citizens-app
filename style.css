@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Khand&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Khand", sans-serif;
+}
+body {
+  background-color: #20262e;
+}
+nav {
+  background-color: #609966;
+  text-align: center;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+}
+nav h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 2px;
+}
+main {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  margin-top: 20vh;
+  flex-direction: column;
+}
+form {
+  display: grid;
+  grid-template-columns: 25vw 25vw;
+  grid-template-rows: 40px 50px 50px 40px;
+}
+.signup {
+  color: white;
+  grid-column: 1 / -1;
+  background-color: #609966;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+form label {
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: #fff;
+}
+form input {
+  padding: 7px;
+}
+.submitbutton {
+  grid-column: 1 / -1;
+  background-color: #609966;
+  font-size: 21px;
+  color: white;
+}
+.result {
+  display: grid;
+  grid-template-columns: 20vw 30vw;
+  grid-template-rows: 30px 30px 30px 30px;
+  display: none;
+}
+
+.white {
+  color: white;
+}
+.font {
+  font-size: 1.5rem;
+}
+.text-center {
+  text-align: center;
+}
+.p-12 {
+  padding: 12px;
+}
+
+.directlink{
+    color: #609966;
+    letter-spacing: 2px;
+    margin: 18px;
+}
+@media  screen and (max-width: 768px) {
+    form{
+        grid-template-columns: 40vw 40vw;
+    }
+}
+@media  screen and (max-width: 500px) {
+
+    .result{
+        grid-template-rows: repeat(30px,8);
+    
+    }
+
+    .result p{
+        grid-column: 1/-1;
+        padding: 4px;
+    }
+
+}
